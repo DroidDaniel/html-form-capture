@@ -1,7 +1,9 @@
 $(document).ready(function () {
   var $form = $("form");
   $form.submit(function () {
-    console.log("submited");
+    $.post($(this).attr("action"), $(this).serialize(), function (response) {
+      console.log("submited");
+    });
     return false;
   });
 });
@@ -26,15 +28,15 @@ $(document).ready(function () {
       $(".error_msg").hide();
       $(".success_msg").show();
     }
-    if ($("#email").val().length == 0) {
-      $("#email").addClass("highlight");
-      $(".error_msg").show();
-      $(".success_msg").hide();
-    } else {
-      $("#email").removeClass("highlight");
-      $(".error_msg").hide();
-      $(".success_msg").show();
-    }
+    // if ($("#email").val().length == 0) {
+    //   $("#email").addClass("highlight");
+    //   $(".error_msg").show();
+    //   $(".success_msg").hide();
+    // } else {
+    //   $("#email").removeClass("highlight");
+    //   $(".error_msg").hide();
+    //   $(".success_msg").show();
+    // }
     var email = $("#email").val();
     var regex =
       /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -83,15 +85,6 @@ $(document).ready(function () {
       $("#property").removeClass("highlight-select");
       $(".error_msg").hide();
       $(".success_msg").show();
-    }
-    if ($("#check_in").is(":checked")) {
-      $(".formfield_checkin").removeClass("highlight-radio");
-      $(".error_msg").hide();
-      $(".success_msg").show();
-    } else {
-      $(".formfield_checkin").addClass("highlight-radio");
-      $(".error_msg").show();
-      $(".success_msg").hide();
     }
   });
 });
