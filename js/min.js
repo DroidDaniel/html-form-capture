@@ -3,6 +3,7 @@ $(document).ready(function () {
   $form.submit(function () {
     $.post($(this).attr("action"), $(this).serialize(), function (response) {
       console.log("submited");
+      $("#sp_form")[0].reset();
     });
     return false;
   });
