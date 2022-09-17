@@ -1,19 +1,7 @@
-// $(document).ready(function () {
-//   var $form = $("form");
-//   $form.submit(function () {
-//     console.log("submited");
-//     $(".contact_form").addClass("contact_form_hide");
-//     $(".sucess_message").fadeIn();
-//     return false;
-//   });
-// });
-
 $(document).ready(function () {
   var $form = $("form");
   $form.submit(function () {
-    $.post($(this).attr("action"), $(this).serialize(), function (response) {
-      console.log("submited");
-    });
+    console.log("submited");
     return false;
   });
 });
@@ -102,15 +90,6 @@ $(document).ready(function () {
       $(".success_msg").show();
     } else {
       $(".formfield_checkin").addClass("highlight-radio");
-      $(".error_msg").show();
-      $(".success_msg").hide();
-    }
-    if ($("#check_out").is(":checked")) {
-      $(".formfield_checkout").removeClass("highlight-radio");
-      $(".error_msg").hide();
-      $(".success_msg").show();
-    } else {
-      $(".formfield_checkout").addClass("highlight-radio");
       $(".error_msg").show();
       $(".success_msg").hide();
     }

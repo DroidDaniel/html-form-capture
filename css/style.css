@@ -119,7 +119,7 @@ input:-webkit-autofill:focus {
 
 .btn__send{
     width: 100%;
-    padding: 8px 0;
+    padding: 12px 0;
     border: none;
     background-color: transparent;
     color: #fff;
@@ -132,7 +132,6 @@ input:-webkit-autofill:focus {
 /*****************Hover Animation**************************/
 .glow-on-hover {
     width: 100%;
-    padding: 8px 0;
     border: none;
     outline: none;
     color: #fff;
