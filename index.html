@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Southern Panorama</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="sp_conatiner">
+    <div class="image_wrapper">
+      <div class="logo_container">
+       <img src="images/logo.png" alt="sp-img" class="logo"/>
+      </div>
+    </div>
+    <div class="contact__container">
+      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeMH7qH5GCExICI52qYs_r56eG4F2RfQjCTVB7YbQBZxHjtkA/formResponse" target="_self" method="POST" class="contact_form" id="sp_form">
+        <p class="error_msg">Please fill in the highlighted fields</p>
+        <p class="success_msg">Your datas has been recieved!</p>
+        <div class="formfield__wrapper">
+          <div class="formfield"><input placeholder="Name" type="text" name="entry.63460532" id="name" class="formfield_input" ></div>
+        </div>
+        <div class="formfield__wrapper">
+          <div class="formfield"><input placeholder="Mobile" type="text" name="entry.996565819" id="mobile" class="formfield_input" ></div>
+        </div>
+        <div class="formfield__wrapper">
+          <div class="formfield"><input placeholder="Email" type="text" name="entry.178039982" id="email" class="formfield_input" ></div>
+        </div>
+        <div class="formfield__wrapper">
+          <div class="formfield_radio">
+            <input type="radio" id="check_in" name="entry.883790752" value="Check in"><label for="check_in" class="formfield_checkin">Check in</label><input type="radio" id="check_out" name="entry.883790752" value="Check out"><label class="formfield_checkout" for="check_out">Check out</label>
+          </div>
+        </div>
+        <div class="formfield__wrapper">
+          <div class="formfield"><input placeholder="No of rooms" type="text" name="entry.1495238316" id="rooms" class="formfield_input" ></div>
+        </div>
+        <div class="formfield__wrapper">
+          <div class="formfield"><input placeholder="No of adults" type="text" name="entry.1304419560" id="adults" class="formfield_input" ></div>
+        </div>
+        <div class="formfield__wrapper">
+          <div class="formfield"><input placeholder="No of Kids 6 to 12 years" type="text" name="entry.616579383" id="kids" class="formfield_input" ></div>
+        </div>
+        <div class="formfield__wrapper formfield__wrapper-marg">
+          <div class="formfield"><select name="entry.1171399669" id="property">
+            <option selected="true" disabled="disabled">Which property you are looking for ?</option> 
+              <option value="Southern panorama indriya, munnar">Southern panorama indriya, munnar</option>
+              <option value="Southern panorama camp Noel, vattavada">Southern panorama camp Noel, vattavada</option>
+              <option value="Southern panorama cruise, Alleppey">Southern panorama cruise, Alleppey</option>
+            </select></div>
+        </div>
+        <div class="formfield__wrapper formfield__wrapper-of-btn">
+          <div class="glow-on-hover formfield formfield__send"><input type="submit" value="SUBMIT" class="btn__send" id="btn_submit"></div>
+        </div>
+      </form>
+    </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="js/min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sucess_message{
+    display: none;
+}
+
+.sp_conatiner{
+    display: flex;
+    height: 100vh;
+}
+
+@media screen and (max-width:992px) {
+  .sp_conatiner{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }  
+}
+
+.contact__container{
+    width: 50%;
+    align-self: center;
+    padding: 30px 0 0 20px;
+}
+
+@media screen and (max-width:992px) {
+    .contact__container{
+        width: 100%;
+        padding: 30px 0;
+    }
+}
+
+.contact__container form{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:992px) {
+    .contact__container form{
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .contact__container form{
+        max-width: 300px;
+    }
+}
+
+.image_wrapper{
+    width: 50%;
+    background-image: url('../images/sp-bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #152443;
+}
+
+@media screen and (max-width:992px) {
+    .image_wrapper{
+        width: 100%;
+        background-position: bottom;
+    }
+}
+
+.formfield__wrapper{
+    margin: 0 0 20px 0;
+}
+
+.formfield_input{
+    width: 100%;
+    padding: 8px 3px;
+    border: none;
+    border-bottom: solid 1px #ccc;
+    transition: all .2s ease;
+    font-size: 16px;
+}
+
+.formfield_input:focus{
+    outline: none;
+    border-bottom: solid 1px #000;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px white inset;
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 50px white inset;
+}
+
+.formfield_radio{
+    display: flex;
+    padding-top: 20px;
+}
+
+#check_out{
+    margin-left: 15px;
+}
+
+.formfield_radio label{
+    margin-left: 5px;
+    color: #767272;
+}
+
+#property{
+    padding: 8px 3px;
+    margin:  15px 0 5px 0;
+    width: 100%;
+    border: solid 1px #ccc;
+}
+
+#property:focus{
+    outline: none;
+}
+
+.btn__send{
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/*****************Hover Animation**************************/
+.glow-on-hover {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #152443;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #152443;
+    left: 0;
+    top: 0;
+    border-radius: 3px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+/*******logo**************/
+.logo_container {
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+ padding: 10px;
+ text-align: center;
+}
+
+@media screen and (max-width:992px) {
+   .logo_container{
+background: -moz-linear-gradient(45deg,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+   } 
+}
+
+.logo{
+    max-width: 180px;
+}
+
+/*************form validation***************/
+.highlight{
+    border-bottom: solid 1px #FF0000;
+}
+
+.highlight-select{
+    border: solid 1px #FF0000!important;
+}
+
+.highlight-radio{
+    color: #FF0000 !important;
+}
+
+.error_msg{
+    color: #FF0000;
+    display: none;
+    transition: all .2s ease;
+    position: absolute;
+    top: -25px;
+}
+
+.success_msg{
+    color: #008000;
+    display: none;
+    transition: all .2s ease;
+    position: absolute;
+    top: -25px;
+}
+
+.contact_form{
+    position: relative;
+}
