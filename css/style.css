@@ -42,11 +42,11 @@
 
 @media screen and (max-width:992px) {
     .contact__container form{
-        max-width: 400px;
+        max-width: 230px;
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:600px) {
     .contact__container form{
         max-width: 230px;
         padding: 0 20px 0 0;
@@ -292,7 +292,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     gap: 25px;
   }
 
-  @media screen and (max-width:420px) {
+  @media screen and (max-width:600px) {
     .formfield_date{
       flex-direction: column;
       gap: 10px;
