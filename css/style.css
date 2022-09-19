@@ -303,6 +303,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     color: #898585;
   }
 
+  .date_label{
+    display: none;
+  }
+
   @media screen and (max-width:600px) {
   .date_picker{
     position: relative;
@@ -314,7 +318,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
   .date_label{
     position: absolute;
-    top: 21px;
+    display: block;
+    top: 30px;
     left: 10px;
   } 
   }
