@@ -73,7 +73,7 @@
 
 .formfield_input{
     width: 100%;
-    padding: 8px 3px;
+    padding: 8px 0 8px 25px;
     border: none;
     border-bottom: solid 1px #ccc;
     transition: all .2s ease;
@@ -221,7 +221,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     border-bottom: solid 1px #FF0000;
 }
 
-.highlight-select{
+.highlight-select,
+.highlight-date{
     border: solid 1px #FF0000!important;
 }
 
@@ -254,3 +255,60 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .contact_form{
     position: relative;
 }
+
+/***************date***************/
+
+::-webkit-inner-spin-button { 
+    display:none;
+  }
+  ::-webkit-calendar-picker-indicator { background-color:white}
+  input[type=date]{
+    font-size:18px;
+    padding: 0 3px;
+    border:solid 1px #898585;
+  }
+
+  
+  @media screen and (max-width:420px) {
+    input[type=date]{
+     width: 100%;
+    }
+  }
+  ::-webkit-datetime-edit-text { color:#898585}
+  ::-webkit-datetime-edit-month-field { color:#898585 }
+  ::-webkit-datetime-edit-day-field { color: #898585; }
+  ::-webkit-datetime-edit-year-field { color:#898585; }
+  ::-webkit-calendar-picker-indicator{ 
+    background-image: url(http://icons.iconarchive.com/icons/dakirby309/simply-styled/256/Calendar-icon.png);
+        background-position:center;
+         background-size:20px 20px;
+         background-repeat:no-repeat;
+        color:rgba(204,204,204,0);
+  }
+
+  .formfield_date{
+    display: flex;
+    gap: 25px;
+  }
+
+  @media screen and (max-width:420px) {
+    .formfield_date{
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  .date_picker label{
+    color: #898585;
+  }
+  
+  /***********icon***********/
+  .icon_wrapper{
+    position: relative;
+  }
+
+  .icons{
+    position: absolute;
+    bottom: 13px;
+    color: #ccc;
+  }

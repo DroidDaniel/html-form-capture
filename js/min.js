@@ -87,5 +87,23 @@ $(document).ready(function () {
       $(".error_msg").hide();
       $(".success_msg").show();
     }
+    if (!$("#checkin").val().length == 0) {
+      $("#checkin").removeClass("highlight-date");
+      $(".error_msg").hide();
+      $(".success_msg").show();
+    } else {
+      $("#checkin").addClass("highlight-date");
+      $(".error_msg").show();
+      $(".success_msg").hide();
+    }
+    if (!$("#checkout").val().length == 0) {
+      $("#checkout").removeClass("highlight-date");
+      $(".error_msg").hide();
+      $(".success_msg").show();
+    } else {
+      $("#checkout").addClass("highlight-date");
+      $(".error_msg").show();
+      $(".success_msg").hide();
+    }
   });
 });
