@@ -302,27 +302,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   .date_picker label{
     color: #898585;
   }
-
-  .date_label{
-    display: none;
-  }
-
-  @media screen and (max-width:600px) {
-  .date_picker{
-    position: relative;
-  }
-
-  .date_picker label{
-    padding-left: 10px;
-  }
-
-  .date_label{
-    position: absolute;
-    display: block;
-    top: 30px;
-    left: 10px;
-  } 
-  }
   
   /***********icon***********/
   .icon_wrapper{
